@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+
+         body {
+       
+            background-color: #f2f2f2;
+         }
+
+          .product-card {
+            width: 300px;
+            background-color: white;
+            padding: 15px;
+            margin: 40px auto;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+          .product-image {
+            width: 100%;
+            border: 2px solid black;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .product-name {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+
+            @media (max-width: 600px) {
+            .product-card {
+                text-align: center;
+            }
+
+            .product-name {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <div class="product-card">
+        <img src="asus tuf.jpg"
+             alt="Product Image"
+             class="product-image">
+
+        <h2 class="product-name">Asus Tuf Gaming</h2>
+
+        <button class="button">Buy Now</button>
+    </div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    [class|=top] {
+  background: yellow;
+    }
+
+    
+a[target] {
+  background-color: yellow;
+}
+
+#rcorners1{
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(239, 139, 51);
+}
+
+#rcorners2{
+    border-radius: 50px;
+    border: 2px solid orangered;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+</style>
+</head>
+<body>
+
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="#">facebook</a>
+<a href="#" target="_blank">Twitter</a>
+<a href="#" target="_top">Instagram</a>
+
+<p><b>Note:</b> For [<i>attribute</i>] to work in IE8 and earlier, a DOCTYPE must 
+be declared.</p>
+
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+<p id="rcorners1">Rounded corners!</p>
+<p id="rcorners2">Rounded corners!</p>
+</body>
+</html>
