@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .blogpost {
+        background: white;
+        padding: 15px;
+        border: 1px solid #ccc;
+        width: 30%;
+    }
+     .blogpost h3 {
+        margin-top: 0;
+    }
+     img{
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+        @media (max-width: 600px) {
+        .blogs {
+            flex-direction: column;
+        }
+    }
+
+       @media (orientation: portrait) {
+        .blog-section {
+            background-color: lightyellow;
+        }
+    }
+
+       
+
+
+</style>
+<body>
+    <h2>Featured Blogs</h2>
+
+    <div class="blog">
+        <div class="blogpost">
+            <h3>Web Design </h3>
+            <img src="web desing.jpg" alt="Web Design">
+            <p>Learn the fundamentals of modern web design.</p>
+            <a href="https://www.coursera.org/courses?query=web%20design">Read More</a>
+        </div>
+
+        <div class="blogpost">
+            <h3>Fitness blog</h3>
+            <img src="fitness blog.jpg" alt="fitness">
+            <p>The top fold features an image of the creator decked out in colorful running gear while goofily karate chopping the air on an empty road—a perfect embodiment of her blog title.</p>
+            <a href="http://example.com/css">Read More</a>
+        </div>
+
+           <div class="blogpost">
+            <h3>Gardening blog: TerraLiving</h3>
+            <img src="gardening.jpg" alt="gardening">
+            <p>TerraLiving is a company that creates botanical art and sculptures for the home..</p>
+            <a href="https://joegardener.com/blog/">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
