@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ccc;
+        }
+
+        .container {
+            display: flex;
+            width: 70%;
+            height: 80vh;
+            background: white;
+        }
+
+        .image-section {
+            width: 50%;
+            background: linear-gradient(to right, #777, #999);
+        }
+
+        .login-section {
+            width: 50%;
+            padding: 40px;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .remember {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: brown;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ✅ Mobile View */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+            }
+
+            .image-section {
+                display: none;
+            }
+
+            .login-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image-section"></div>
+
+        <div class="login-section">
+            <h2>Login Form</h2>
+
+            <label>Email :</label>
+            <input type="email">
+
+            <label>Password :</label>
+            <input type="password">
+
+            <div class="remember">
+                <input type="checkbox"> Remember Me
+            </div>
+
+            <button>Login</button>
+        </div>
+    </div>
+
+</body>
+</html>

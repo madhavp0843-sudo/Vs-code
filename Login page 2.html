@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+
+    <style>
+
+        body{
+            background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        }
+        .login-section{
+             display: flex;
+             width: 80%;
+             margin: 50px auto;
+             background: #fce3e3;
+             
+             
+        }
+
+        .login-box{
+            width: 50%; 
+            height: 100vh   
+        }
+
+        .login-form{
+         width: 50%;
+         padding: 40px;
+       }
+
+       .login-form h2 {
+        margin-bottom: 20px;
+        color: #b35a2a;
+        
+        }  
+
+
+
+        label {
+        display: block;
+        margin-top: 20pxpx;
+        }
+
+        input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        }
+
+
+
+        button {
+        width: 100%;
+        padding: 10px;
+        background: #b35a2a;
+        color: white;
+        border: none;
+       }
+
+       .checkbox{
+         margin:auto;
+       }
+
+   
+    @media only screen (max-width: 768px){
+
+    }
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="login-section">
+    <div class="login-box"></div>
+
+    <div class="login-form">
+        <h2>Login Form</h2>
+        <label for="email">Email</label>
+        <input type="email">
+        <label for="password">Password</label>
+        <input type="password">
+
+        <div class="checkbox">
+            <label for="checkbox">Remember me</label>
+            <input type="checkbox">
+            </div>
+            <button>login</button>
+        </div>
+        </div>
+
+    
+</body>
+</html>
