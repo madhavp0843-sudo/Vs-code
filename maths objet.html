@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    function getRandomIntInclusive(min, max) {
+         min = Math.ceil(min);
+         max = Math.floor(max);
+         return Math.floor(Math.random() * (max - min + 1)) + min; 
+    }
+    var x = getRandomIntInclusive(2, 100);
+    console.log(x);
+    let userScore = "75";
+
+    console.log(userScore);
+    console.log(typeof userScore);
+
+    var result_1 = Number('75');
+    console.log(result_1);
+    console.log(typeof(result_1));
+
+   document.getElementById("demo").innerHTML= Math.sqrt(75);
+
+   let piValue = Math.PI;
+   console.log(piValue);
+   var x = '50' * 2;
+   console.log("x ="+x); 
+   console.log("The data type of result_3 is "+typeof(x)); 
+ 
+
+       
+    </script>
+</body>
+</html>
