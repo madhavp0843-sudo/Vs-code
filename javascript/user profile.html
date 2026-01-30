@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="checkProfile()">Check Access</button>
+    <p id="demo"></p>  
+    
+    <script>
+         function checkProfile() {
+        let user = {
+            name: "Madhav",
+            age: 20,
+            isAdmin: true
+        };
+
+        var x = ((user.age >= 18) && (user.isAdmin == true)) ? "Access Granted" : "Access Denied";
+        document.getElementById("demo").innerHTML = x;
+
+       
+        var y = ("age" in user) ? "Age Exists" : "Age Not Exists";
+        console.log(y);
+
+       
+        delete user.age;
+        console.log(user);
+    }
+    </script>
+</body>
+</html>
