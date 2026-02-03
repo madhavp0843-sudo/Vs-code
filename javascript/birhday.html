@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<script>
+    let user = {
+        name: 'Madhav',
+        birthday: '2000-08-25'
+    };
+
+    function birthday(user) {
+        var dat = new Date(user.birthday);
+
+        var day = dat.getDate();
+        var year = dat.getFullYear();
+
+        var months = [
+            "January","February","March","April","May","June",
+            "July","August","September","October","November","December"
+        ];
+        var month = months[dat.getMonth()];
+
+        var current = new Date();
+        var currentyear = current.getFullYear();
+
+        var age = Number(currentyear - year);
+
+        console.log(
+            user.name + " was born on " + day + " " + month + ", " + year +
+            " and is " + age + " years old."
+        );
+    }
+
+    birthday(user);
+</script>
+</body>
+</html>
