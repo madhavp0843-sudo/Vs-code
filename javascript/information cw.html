@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        class Book {
+        constructor(title, author, price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+ 
+    getTitle() {
+        return this.title;
+    }
+
+    getAuthor() {
+        return this.author;
+    } 
+    setPrice(newPrice) {
+        if (typeof newPrice === "number" && newPrice > 0) {
+            this.price = newPrice;
+        } else {
+            console.log("Invalid price. Price must be a number greater than 0.");
+        }
+    } 
+    getDetails() {
+        return `Title: ${this.title}, Author: ${this.author}, Price: ₹${this.price}`;
+    }
+}
+let book1 = new Book("To Kill a Mockingbird", "Harper Lee ", 299);
+book1.setPrice(-100);      
+book1.setPrice("500");   
+book1.setPrice(399);    
+console.log(book1.getDetails());
+
+</script>
+    
+</body>
+</html>

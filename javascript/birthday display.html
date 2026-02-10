@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script>
+    let user = {
+        name: 'Madhav',
+        birthday: '2000-08-25'
+    };
+
+    function birthday(user) {
+        var dat = new Date(user.birthday);
+        var today = new Date();
+
+        var day = dat.getDate();
+        var year = dat.getFullYear();
+
+        var months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+        var monthName = months[dat.getMonth()];
+
+        
+        var yearsPassed = today.getFullYear() - year -Number( today.getMonth() < dat.getMonth() || (today.getMonth() === dat.getMonth() &&  today.getDate() < day)
+
+            );
+
+        
+        var message = yearsPassed >= 1
+            ? "It has been more than a year since that date."
+            : "It has been less than a year since that date.";
+
+        document.getElementById("output").innerHTML =
+            "Name: " + user.name + "<br>" +
+            "Date: " + day + " " + monthName + " " + year + "<br>" +
+            "Years Passed: " + yearsPassed + "<br>" +
+            message;
+    }
+
+    birthday(user);
+</script>
+
+</body>
+</html>

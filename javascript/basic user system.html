@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class User {
+        constructor(name, age, email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+    getName() {
+        return this.name;
+    }
+    getAge() {
+    return this.age;
+    }
+    setEmail(email) {
+        if (email.includes("@")) {
+            this.email = email;
+        } else {
+            console.log("Invalid email! Must contain '@'");
+        }
+    }
+    getEmail() {
+        return this.email;
+    }
+}
+let user = new User("Madhav", 24, "madhav@gmail.com");
+user.setEmail("madhavgmail.com");
+user.setEmail("madhav@company.com");
+console.log("Name:", user.getName());
+console.log("Age:", user.getAge());
+console.log("Email:", user.getEmail());
+</script>
+</body>
+</html>
