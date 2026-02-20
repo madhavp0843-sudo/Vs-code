@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<style>
+    body{
+        margin: 100px;
+    }
+    input,select , button{
+         width: 60%;
+         padding: 12px;
+         margin: 15px ;
+         display: inline-block;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         box-sizing: border-box;
+    }
+
+.box{
+   background-color: rgb(164, 173, 254);
+   width: 500px;
+   height: 400px;
+   border-radius: 9px;
+   
+   
+}
+
+h2{
+    text-align: center;
+   
+}
+label{
+    color: #100c0c;
+}
+
+p{
+    text-align: center;
+}
+
+
+</style>
+<body>
+    <div class="box">
+    <h2>Calculator</h2>
+<input type="number"  id="num1" placeholder="Number 1">
+<input type="number" id="num2" placeholder="Number 2">
+<select id="operator">
+<option value="add">+</option>
+<option value="sub">-</option>
+<option value="mul">*</option>
+<option value="div">/</option>
+  
+</select>
+<button onclick="calculate()">=</button>
+
+
+<p id="result"></p>
+</div>
+
+<script>
+
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    if (b == 0) {
+        return "Cannot divide by zero";
+    }
+    return a / b;
+}
+
+function printResult(value) {
+    document.getElementById("result").innerHTML = "Result: " + value;
+}
+
+function calculate() {
+    var n1 = parseFloat(document.getElementById("num1").value);
+    var n2 = parseFloat(document.getElementById("num2").value);
+    var op = document.getElementById("operator").value;
+    var result;
+
+    if (op == "add") {
+        result = add(n1, n2);
+    } 
+    else if (op == "sub") {
+        result = subtract(n1, n2);
+    } 
+    else if (op == "mul") {
+        result = multiply(n1, n2);
+    } 
+    else if (op == "div") {
+        result = divide(n1, n2);
+    }
+
+    printResult(result);
+}
+
+</script>
+
+</body>
+</html>

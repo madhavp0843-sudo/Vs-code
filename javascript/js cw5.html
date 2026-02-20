@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo"></p>
+    <button onclick="order()">status</button>
+    <script>
+        function order() {
+            let shop = {
+                itemName: 'charger',
+                isDelivered: 'true',
+                daysSinceDelivery: 7
+            };
+        }
+        
+            var x = ((shop.isDelivered=="true")&&(shop.daysSinceDelivery==7)) ? "Eligible for Return" : "Return Period Expired";
+            document.getElementById("demo").innerHTML=x;
+            var y = (shop.itemName) ? "Exist" : "Not exist";
+            document.getElementById("demo").innerHTML=y;
+            delete shop.daysSinceDelivery
+            console.log(shop);
+        </script>
+        
+</body>
+</html>

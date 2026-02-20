@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; 
+ 
+     }
+     var x=getRandomInt(0,100);
+     console.log(x);
+     document.getElementById("demo").innerHTML=x;
+
+     let userscore="75";
+     console.log(userscore);
+     var result_1 = Number('75');
+     console.log(result_1);
+     console.log(typeof(result_1));
+
+   
+    
+     document.getElementById("demo").innerHTML = Math.sqrt(75);
+     var y=50*2;
+     console.log(y);
+
+  
+
+
+    </script>
+
+</body>
+</html>

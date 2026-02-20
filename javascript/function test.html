@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function number(a1,b1){
+            let a=a1;
+            let b=b1;
+            let sum=a+b;
+            return sum
+        }
+
+    result=number(3,4)
+    console.log(result)
+
+    function addnumber1(a2,b2){
+        let a=a2;
+        let b=b2;
+        let sum=a+b;
+        return sum;
+    }
+
+    function printnumber(result){
+        console.log(result);
+    }
+
+    result= addnumber1(2,5);
+    printnumber(result);
+
+    function num(num1){
+        let a=num1;
+        let b=4;
+        let sum=a+b;
+        console.log(sum);
+
+    }
+    num(5);
+
+    function number2(num2){
+        let a=5;
+        let b=num2;
+        let sum=a+b;
+        console.log(sum);
+    }
+    number2(6);
+
+    function arrnum(num){
+        let a=num[0];
+        let b=num[1];
+        let c=6;
+        let sum=a+b+c;
+        console.log(sum);
+    }
+    arrnum([4,5]);
+
+    function array(num){
+        let a=num[0];
+        let b=num[1];
+        let c=5;
+        let sum=a+b+c;
+        console.log(sum);
+
+    }
+   array([5,7]);
+
+
+   function numberobj(num){
+    let a=num.num1;
+    let b=7;
+    let c=num.num2;
+    let sum=a+b+c;
+    console.log(sum);
+   }
+
+   numberobj({num1:5,num2:7});
+
+
+   function addnumbers(){
+    let a=4;
+    let b=6;
+    let sum=a+b;
+    return sum;
+   }
+   result=addnumbers();
+   console.log(result);
+
+   function addnumber2(){
+    let a=5;
+    let b=6;
+    return[a+b];
+   }
+
+   result=addnumber2();
+   console.log(result[0]);
+
+
+
+   function addobj(num){
+    let a=4;
+    let b=5;
+    let sum={value:(a+b)};
+    return sum;
+   }
+
+   result=addobj();
+   console.log(result.value);
+    </script>
+</body>
+</html>
