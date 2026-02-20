@@ -2,5 +2,5 @@
   'db.ordercollection.insert({Name:"Alice Johnson",item:"Chocolate Cake",Quantity:2,Totalprice:450}) - For inserting document
   'show collections', - To show collections
   'db.ordercollection.drop()', - To drop collections
-  ' db.dropDatabase()', - To drop database
-  'history'
+  'db.dropDatabase()', - To drop database
+  

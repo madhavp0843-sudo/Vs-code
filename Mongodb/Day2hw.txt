@@ -1,0 +1,7 @@
+  'use schoollibrary', - To create database
+  'db.bookcollection.insert({Title:"Indroduction to science",Name:"Dr.smith", Available:"True"})', - Inserting the document 
+  'show collections', - To show collections
+  'show dbs', - To show database
+  'db.bookcollection.drop()', - To drop the collection book
+   'db.dropDatabase()', - To drop databse
+  
