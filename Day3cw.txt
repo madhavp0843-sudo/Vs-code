@@ -1,0 +1,9 @@
+ 'use EventTracker',
+  'var date1= Date()',
+  ' db.EventTracker.insertOne({Name:"Music Fest", date: date1, isFreeEntry: "false", ticketPrice: 299.99, performers: ["DJ Max", "Live Band"], location:"Chennai", venue: "Beach Arena", specialCode: "null"})',
+  'db.EventTracker.find().pretty()',
+  '{ Name: "Food Fest", date: date1, Ticketprice: 300, place: "Kottayam", venue:"City Hall" },\r  { Name:"cultural fest", date: date1, Ticketprice: 150, place: "Trivandrum", venue:"pattom" },\r[\rdb.EventTracker.insertMany(',
+  'db.EventTracker.find().pretty()',
+  'show collections',
+  'db.UpcomingEvents.find()',
+  'db.EventTracker.find()'
