@@ -1,0 +1,4 @@
+  'var date1=Date()',
+  'db.CompanyDB.insertOne({name: "Ravi Kumar" , age: 28, isActive: "true", salary: 45000.50, skills: ["JavaScript", "Node.js", "MongoDB"],  email: "ravi@example.com", phone: "9876543210",joinedDate: date1, managerAssigned: "null" })',
+  ')\r]\r  {name: "Suresh Raina", age: 22, isActive: "true", salary: 56000.50, skills: ["Java", "Spring Boot", "MySQL"], email: "sureshraina23@gmail.com", phone: "98747213176", joinedDate: date1, managerAssigned: "null"  }\r  {name: "Akshay Kumar", age: 30, isActive: "false", salary: 44000.50, skills: ["HTML", "CSS", "React"], email: "akshaykumar20@gmail.com", phone: "98756342176", joinedDate: date1, managerAssigned: "null"},\r  {name: "Rahul Raj", age: 24, isActive: "true", salary: 49000.50, skills: ["Python", "Django", "SQL"], email: "rahulraj@gmail.com", phone: "98756342176", joinedDate: date1, managerAssigned: "null" },\r[\rdb.CompanyDB.insertMany(',
+  'db.CompanyDB.find().pretty()'
