@@ -1,0 +1,7 @@
+ 'use BookstoreDB',
+`\r]);\r    { title: "Educated", author: "Tara Westover", price: 399.99, year: 2018, available: false }\r    { title: "1984", author: "George Orwell", price: 249.99, year: 1949, available: true },\r    { title: "The Night Circus", author: "Erin Morgenstern", price: 299.99, year: 2011, available: true },\r    { title: "The Catcher in the Rye", author: "J.D. Salinger", price: 199.99, year: 1951, available: false },\r    { title: "Becoming", author: "Michelle Obama", price: 449.99, year: 2018, available: true },\r    { title: "The Girl on the Train", author: "Paula Hawkins", price: 349.99, year: 2015, available: true },\r    { title: "A Game of Thrones", author: "George R.R. Martin", price: 599.99, year: 1996, available: true },\r    { title: "The Da Vinci Code", author: "Dan Brown", price: 499.99, year: 2003, available: false },\r    { title: "The Hobbit", author: "J.R.R. Tolkien", price: 299.99, year: 1937, available: true },\r    { title: "Harry Potter and the Philosopher's Stone", author: "J.K. Rowling", price: 399.99, year: 1997, available: true },\rdb.Books.insertMany([`,
+'db.Books.find({"price":{$lt:500}}).pretty()',
+'db.Books.findOne({author: "J.K. Rowling"})',
+'db.Books.find({$and:[{"year":{$gt:2010}},{"price":{$gte:300}}]}).pretty()',
+'db.Books.find({$or:[{"price":{lt:200}},{"available":false}]}).pretty()',
+'db.Books.find( { "price": { $not: { $gt: "450" } } } ).pretty()'
