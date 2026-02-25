@@ -1,0 +1,10 @@
+'use clothstore',
+']);\r    { name: "Chinos", category: "Pants", price: 299.99, stock: 11, discount: false }\r    { name: "Hooded Sweatshirt", category: "Sweater", price: 399.99, stock: 18, discount: true },\r    { name: "Silk Scarf", category: "Accessories", price: 149.99, stock: 0, discount: false },\r    { name: "Casual Shorts", category: "Shorts", price: 249.99, stock: 25, discount: true },\r    { name: "Wool Sweater", category: "Sweater", price: 699.99, stock: 10, discount: true },\r    { name: "Cargo Pants", category: "Pants", price: 499.99, stock: 8, discount: false },\r    { name: "Formal Shirt", category: "Shirt", price: 349.99, stock: 12, discount: true },\r    { name: "Leather Jacket", category: "Jacket", price: 999.99, stock: 5, discount: true },\r    { name: "Cotton T-Shirt", category: "Shirt", price: 199.99, stock: 15, discount: false },\r    { name: "Denim Jeans", category: "Pants", price: 599.99, stock: 20, discount: true },\rdb.Clothes.insertMany([',
+'db.Clothes.find({"price":{$gt:500}}).pretty()',
+'db.Clothes.findOne({category: "Shirt"})',
+'db.Clothes.find({$and:[{"price":{$lte:300}},{"stock":{$gt:10}}]}).pretty()',
+'db.Clothes.find({$or:[{"price":{$lt:200}},{"discount":true}]}).pretty()',
+'db.Clothes.update({"Denim Jeans":10},{$set:{"Denim Jeans":50}})',
+'db.Clothes.find({"name": "Denim Jeans"}).pretty()',
+'db.Clothes.remove({"stock": 0})',
+'db.Clothes.find().pretty()'
