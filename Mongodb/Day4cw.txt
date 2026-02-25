@@ -1,0 +1,8 @@
+'use electronicstore',
+']);\r{ productName: "Gaming Monitor", category: "Monitors", price: 399.99, stock: 4, discountAvailable: false }\r    { productName: "Smart Watch", category: "Wearables", price: 249.99, stock: 5, discountAvailable: true },\r    { productName: "Samsung Tablet", category: "Tablets", price: 299.99, stock: 12, discountAvailable: false },\r    { productName: "MacBook Air", category: "Laptops", price: 999.99, stock: 7, discountAvailable: true },\r    { productName: "Logitech Mouse", category: "Accessories", price: 49.99, stock: 20, discountAvailable: true },\r    { productName: "Sony Headphones", category: "Accessories", price: 199.99, stock: 15, discountAvailable: true },\r    { productName: "HP Spectre x360", category: "Laptops", price: 1499.99, stock: 3, discountAvailable: false },\r    { productName: "Dell XPS 13", category: "Laptops", price: 1299.99, stock: 6, discountAvailable: true },\r    { productName: "iPhone 13", category: "Smartphones", price: 999.99, stock: 8, discountAvailable: false },\r    { productName: "Galaxy S21", category: "Smartphones", price: 799.99, stock: 10, discountAvailable: true },\rdb.Products.insertMany([',
+'db.Product.find({"price":{$lt:1000}}).pretty()',
+' db.Products.find({"price":{$lt:1000}}).pretty()',
+'db.Products.find({category:"Smartphones"}).pretty()',
+'db.Products.find({$or:[{"price":{lt:300}},{"discountAvailable":true}]}).pretty()',
+'db.Products.find({"price":{$ne:1500}}).pretty()',
+'db.Products.find({$and:[{"stock":{$gte:5}},"category":"Laptops"}]).pretty()',
