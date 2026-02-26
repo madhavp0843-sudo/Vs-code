@@ -1,0 +1,7 @@
+'use student',
+']);\r    { name: "Ethan Patel", age: 22, grade: "B-", email: "ethan.patel@university.com" }\r    { name: "Ava Kim", age: 20, grade: "A+", email: "ava.kim@university.com" },\r    { name: "Noah Martinez", age: 21, grade: "B", email: "noah.martinez@university.com" },\r    { name: "Sophia Lee", age: 19, grade: "A-", email: "sophia.lee@university.com" },\r    { name: "Liam Taylor", age: 23, grade: "C+", email: "liam.taylor@university.com" },\r    { name: "Olivia Brown", age: 20, grade: "A", email: "olivia.brown@university.com" },\r    { name: "James Wilson", age: 22, grade: "B", email: "james.wilson@university.com" },\r    { name: "Emily Davis", age: 21, grade: "A-", email: "emily.davis@university.com" },\r    { name: "Michael Chen", age: 19, grade: "B+", email: "michael.chen@university.com" },\r    { name: "Sarah Johnson", age: 20, grade: "A", email: "sarah.johnson@university.com" },\rdb.students.insertMany([',
+'db.students.find({},{"name":1 , "email":1})'
+'db.students.find().limit(5).pretty()
+'db.students.find({},{"name":1, "grade":1,}).skip(3).limit(4).pretty()',
+'db.students.find({},{"name":1,"email":1,}).skip(5).limt(3).pretty()',
+'db.students.find({},{"name":1,"email":1}).skip(5).limit(3).pretty()'
