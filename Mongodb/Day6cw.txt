@@ -1,0 +1,8 @@
+'use employees',
+']);\r    { name: "Henry Chen", department: "HR", salary: 62000, email: "henry.chen@company.com" }\r    { name: "Grace Kim", department: "Marketing", salary: 68000, email: "grace.kim@company.com" },\r    { name: "Frank Wilson", department: "Engineering", salary: 82000, email: "frank.wilson@company.com" },\r    { name: "Emma Davis", department: "Sales", salary: 70000, email: "emma.davis@company.com" },\r    { name: "Diana Lee", department: "HR", salary: 60000, email: "diana.lee@company.com" },\r    { name: "Charlie Brown", department: "Engineering", salary: 80000, email: "charlie.brown@company.com" },\r    { name: "Bob Smith", department: "Marketing", salary: 65000, email: "bob.smith@company.com" },\r    { name: "Alice Johnson", department: "Engineering", salary: 75000, email: "alice.johnson@company.com" },\rdb.employees.insertMany([',
+'db.employees.find({},{"id":0})',
+'db.employees.find({},{"name":1 , "department":1})',
+'db.employees.find().limit(4).pretty()',
+').skip(2).limit(3)\r   { name: 1, salary: 1, _id: 0 }\r   {},\rdb.CompanyDB.find(',
+'db.employees.find({},{name:1,salary:1}).skip(2).limit(3).pretty()',
+'db.employees.find({},{name:1,email:1}).skip(5).limit(2).pretty()'
