@@ -1,0 +1,5 @@
+'use store',
+']);\r    { name: "UltraBook", category: "Laptops", price: 1099.99, rating: 4.9 }\r    { name: "Wireless Keyboard", category: "Accessories", price: 49.99, rating: 4.0 },\r    { name: "Desktop PC", category: "Desktops", price: 1299.99, rating: 4.7 },\r    { name: "Smart Watch", category: "Wearables", price: 199.99, rating: 4.4 },\r    { name: "Tablet X", category: "Tablets", price: 299.99, rating: 4.1 },\r    { name: "4K Monitor", category: "Monitors", price: 399.99, rating: 4.6 },\r    { name: "Bluetooth Headphones", category: "Accessories", price: 89.99, rating: 4.3 },\r    { name: "Smartphone Pro", category: "Smartphones", price: 999.99, rating: 4.5 },\r    { name: "Gaming Laptop", category: "Laptops", price: 1499.99, rating: 4.8 },\r    { name: "Wireless Mouse", category: "Accessories", price: 29.99, rating: 4.2 },\rdb.products.insertMany([',
+'db.products.find({}, { "name": 1, "price":1})',
+'db.products.find({},{"name":1,"rating":1}).sort({"rating":-1}).skip(5).limit(4)',
+'db.products.distinct("category")'
