@@ -1,0 +1,6 @@
+'use blog',
+']);\r  }\r  publishedDate: ISODate("2023-12-10T18:00:00Z")\r   tags: ["humor", "webdev"],\r    author: "Charlie Brown",\r    title: "Cooking with JavaScript",\r  {\r  },\r    publishedDate: ISODate("2024-02-20T09:15:00Z")\r    tags: ["tech", "future"],\r    author: "Alice Smith",\r    title: "AI in 2026",\r  {\r  },\r    publishedDate: ISODate("2024-03-01T14:30:00Z")\r    tags: ["database", "tutorial"],\r    author: "Bob Jones",\r    title: "Mastering MongoDB Indexes",\r  {\r  },\r    publishedDate: ISODate("2024-01-15T10:00:00Z")\r    tags: ["programming", "lifestyle"],\r    author: "Alice Smith",\r    title: "The Joy of Coding",\r  {\rdb.posts.insertMany([',
+'db.posts.createIndex({ author: 1 })',
+'db.posts.createIndex({ publishedDate: -1 })',
+'db.posts.getIndexes()'
+]
