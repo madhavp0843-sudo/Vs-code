@@ -1,0 +1,12 @@
+'use electronicstore',
+'])\r    { product: "HP Spectre x360", category: "Laptops", price: 1399.99, quantity: 2, date: ISODate("2025-07-07T11:00:00Z") }\r    { product: "MacBook Air", category: "Laptops", price: 1049.99, quantity: 1, date: ISODate("2025-07-06T10:00:00Z") },\r    { product: "Bluetooth Headphones", category: "Accessories", price: 89.99, quantity: 3, date: ISODate("2025-07-05T15:30:00Z") },\r    { product: "Dell XPS 13", category: "Laptops", price: 1249.99, quantity: 4, date: ISODate("2025-07-05T13:50:00Z") },\r    { product: "Smartphone Pro", category: "Smartphones", price: 999.99, quantity: 2, date: ISODate("2025-07-04T11:20:00Z") },\r    { product: "MacBook Air", category: "Laptops", price: 1099.99, quantity: 2, date: ISODate("2025-07-04T09:45:00Z") },\r    { product: "HP Spectre x360", category: "Laptops", price: 1499.99, quantity: 1, date: ISODate("2025-07-03T14:15:00Z") },\r    { product: "Wireless Mouse", category: "Accessories", price: 29.99, quantity: 5, date: ISODate("2025-07-02T12:00:00Z") },\r    { product: "MacBook Air", category: "Laptops", price: 999.99, quantity: 3, date: ISODate("2025-07-02T10:30:00Z") },\r    { product: "Dell XPS 13", category: "Laptops", price: 1299.99, quantity: 2, date: ISODate("2025-07-01T08:00:00Z") },\rdb.sales.insertMany([',
+'])\r  { $match: { product: "MacBook Air" } }\rdb.sales.aggregate([',
+'db.sales.find({ category: "laptops" })',
+'db.sales.find({ category: "Laptops" })',
+'])\r  { $group: { _id: "$product", totalQuantity: { $sum: "$quantity" } } }\rdb.sales.aggregate([',
+'])\r  }\r    }\r      averagePrice: { $avg: "$price" }\r      _id: "$products",\r    $group: {\r  {\rdb.sales.aggregate([',
+'])\r  { $sort: { totalQuantity: -1 } }\rdb.sales.aggregate([',
+'])\r  }\r    }\r      totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } }\r      _id: "$product",\r    $group: {\r  {\rdb.sales.aggregate([',
+'])\r { $out: "laptop saale_summary" }',
+'])\r }\r $out: "laptop_sales_summary"\r  {\r  },\r }\r totalRevenue: { $sum: { $multiply: ["$price", "$quantity"] } }\r      _id: "$product",\r    $group: {\r  {\rdb.sales.aggregate(['
+]
