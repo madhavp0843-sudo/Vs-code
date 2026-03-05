@@ -1,0 +1,6 @@
+
+'use storeonline',
+']);\r  { name: "Desk Chair", category: "Furniture", price: 250, stock: 10 }\r  { name: "Smartphone", category: "Electronics", price: 900, stock: 15 },\r  { name: "Coffee Maker", category: "Appliances", price: 80, stock: 20 },\r  { name: "Laptop", category: "Electronics", price: 1200, stock: 5 },\rdb.products.insertMany([',
+'db.products.createIndex({ category: 1 })',
+'db.products.createIndex({ price: -1 })',
+'db.products.getIndexes()'
