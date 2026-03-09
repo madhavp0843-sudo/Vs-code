@@ -1,0 +1,7 @@
+'use mashupdb',
+'])\r  }\r    city: "Alappuzha"\r    marks: 92,\r    course: "Information Technology",\r    age: 20,\r    name: "Vishnu Pillai",\r  {\r  },\r    city: "Kottayam"\r    marks: 88,\r    course: "Civil",\r    age: 22,\r    name: "Sneha Joseph",\r  {\r  },\r    city: "Kollam"\r    marks: 78,\r    course: "Mechanical",\r    age: 19,\r    name: "Rahul Kumar",\r  {\r  },\r    city: "Trivandrum"\r    marks: 90,\r    course: "Electronics",\r    age: 21,\r    name: "Anjali Menon",\r  {\r  },\r    city: "Kochi"\r    marks: 85,\r    course: "Computer Science",\r    age: 20,\r    name: "Arjun Nair",\r  {\rdb.students.insertMany([',
+mongoexport --db mashupdb --collection students --out students.json'
+mongoexport --db mashupdb --collection students --type=csv --fields _id,name,marks --out students.csv
+mongoexport --db students --collection students --limit 4 --out first4students.json
+mongoexport --db students --collection students --sort "{_id:1}" --limit 3 --out sorted3.json
+mongoexport --db students --collection students --sort "{_id:1}" --skip 2 --limit 6 --out skip2limit6.json
