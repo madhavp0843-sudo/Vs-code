@@ -1,0 +1,6 @@
+'use students',
+'])\r  }\r    city: "Ernakulam"\r    marks: 92,\r    course: "Information Technology",\r    age: 20,\r    name: "Vishnu",\r  {\r  },\r    city: "Kottayam"\r    marks: 88,\r    course: "Civil",\r    age: 22,\r    name: "Sneha",\r  {\r  },\r    city: "Calicut"\r    marks: 75,\r    course: "Mechanical",\r    age: 19,\r    name: "Rahul",\r  {\r  },\r    city: "Trivandrum"\r    marks: 90,\r    course: "Electronics",\r    age: 21,\r    name: "Ananya",\r  {\r  },\r    city: "Kochi"\r    marks: 85,\r    course: "Computer Science",\r    age: 20,\r    name: "Arjun",\r  {\rdb.students.insertMany([',
+'db.students.createIndex({mark: 1})',
+'db.students.getIndexes()',
+'db.students.dropIndex({mark: 1})',
+ 'mongoexport --db students --collection students --limit 3 --sort "{_id: 1}" --out sorted3.json',
