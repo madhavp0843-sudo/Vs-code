@@ -1,0 +1,14 @@
+let fs = require('fs');
+fs.writeFileSync('profile.txt', "Name: Riya\nAge: 22\nCity: Mumbai");
+let data = fs.readFileSync('profile.txt', 'utf-8');
+function checkProfile(text) {
+    if (text.includes('Riya')) {
+        console.log('Profile verified');
+    } else {
+        console.log('Invalid profile');
+    }
+}
+
+checkProfile(data);
+fs.appendFileSync('profile.txt', "\nStatus: Active");
+fs.renameSync('profile.txt', 'verified_profile.txt');
