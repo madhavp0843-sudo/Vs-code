@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "lower-case": "^2.0.2"
+    "lower-case": "^2.0.2",
+    "mongodb": "^7.1.1"
   }
 }
